@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  width: 75%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nav img {
+  width: 10%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.nav div {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: default;
+}
+
+.nav div h1 {
+  font-size: 2.5rem;
+}
+
+.nav div p {
+  font-size: 1rem;
+}
+
+.nav nav {
+  width: 55%;
+}
+
+.nav nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav nav ul li {
+  list-style: none;
+  transition: 0.35s;
+}
+
+.nav nav ul li:hover {
+  transition: 0.35s;
+  border-bottom: 1px solid black;
+  transform: scale(1.1);
+}
+
+.nav nav ul li a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
