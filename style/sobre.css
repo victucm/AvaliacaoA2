@@ -1,0 +1,44 @@
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#missao-visao-valores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+#missao-visao-valores article {
+    flex: 1 1 220px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    padding: 20px;
+    margin-bottom: 0;
+    transition: box-shadow 0.2s;
+}
+
+#missao-visao-valores article:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+#missao-visao-valores h2 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 6px;
+}
+
+#missao-visao-valores p {
+    color: #444;
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin: 0;
+}

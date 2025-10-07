@@ -1,0 +1,62 @@
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f8fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+#galeria-fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#galeria-fotos h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 48px; 
+    color: #2c3e50;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+#galeria-fotos figure {
+    width: 480px;
+    max-width: 100%;
+    padding: 18px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    margin: 0;
+}
+
+#galeria-fotos figure:hover {
+    box-shadow: 0 6px 32px rgba(44,62,80,0.18);
+    transform: scale(1.03);
+}
+
+#galeria-fotos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.10);
+}
+
+#galeria-fotos figcaption {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 6px;
+    font-style: italic;
+}
