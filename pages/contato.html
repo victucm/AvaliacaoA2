@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como Ajudar - ASCOM</title>
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/como-ajudar.css">
+    <title>Contato - ASCOM</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
 
     <header class="nav">
-        <img src="img/logo.jpeg" alt="Logo da ASCOM" height="50">
+        <img src="../assets/img/logo.jpeg" alt="Logo da ASCOM" height="50">
         <div>
-            <h1>Como Ajudar</h1>
+            <h1>Fale Conosco</h1>
         </div>
 
         <nav>
@@ -30,22 +30,21 @@
     </header>
 
     <main>
-        <section id="doacao">
-            <h2>Faça uma Doação</h2>
-            <form id="doacao-form">
-                <label for="valor">Valor (R$):</label>
-                <input type="number" id="valor" name="valor" min="10" required>
-                <button type="submit">Doar Agora</button>
-            </form>
+        <section id="informacoes-contato">
+            <p>Endereço: Rua Professor Gustavo Pires de Andrade, 1005</p>
+            <p>Telefone: (11) 2017-2297</p>
+            <p>E-mail: contato@ascom.org.br</p>
         </section>
-        <section id="voluntariado">
-            <h2>Seja um Voluntário</h2>
-            <form id="voluntario-form">
-                <label for="nome">Nome Completo:</label>
+        <section id="formulario-contato">
+            <h2>Envie uma Mensagem</h2>
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" required>
-                <button type="submit">Quero ser voluntário</button>
+                <label for="email-contato">E-mail:</label>
+                <input type="email" id="email-contato" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
             </form>
         </section>
     </main>
