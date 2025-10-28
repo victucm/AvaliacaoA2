@@ -1,9 +1,9 @@
 footer {
   width: 100%;
   min-height: 180px;
-  border-radius: 1rem 1rem 0 0;
   margin-top: 3.5rem;
-  padding: 2rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background: linear-gradient(90deg, #1976d2 0%, #64b5f6 100%);
   color: #fff;
   box-shadow: 0 -4px 16px rgba(25, 118, 210, 0.08);

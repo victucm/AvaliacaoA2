@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -61,5 +62,83 @@
             <button type="submit">Inscrever</button>
         </form>
     </footer>
+
+    <script>
+        // Gráfico de Doações
+        const ctxDoacoes = document.getElementById('graficoDoacoes').getContext('2d');
+        new Chart(ctxDoacoes, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+                datasets: [{
+                    label: 'Doações Recebidas (R$)',
+                    data: [12000, 15000, 18000, 16000, 20000, 25000],
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Voluntários
+        const ctxVoluntarios = document.getElementById('graficoVoluntarios').getContext('2d');
+        new Chart(ctxVoluntarios, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'Número de Voluntários Ativos',
+                    data: [50, 75, 100, 125, 150, 200],
+                    fill: false,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Pessoas Ajudadas
+        const ctxPessoas = document.getElementById('graficoPessoasAjudadas').getContext('2d');
+        new Chart(ctxPessoas, {
+            type: 'pie',
+            data: {
+                labels: ['Crianças', 'Jovens', 'Adultos', 'Idosos'],
+                datasets: [{
+                    data: [300, 250, 200, 150],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.5)',
+                        'rgba(54, 162, 235, 0.5)',
+                        'rgba(255, 206, 86, 0.5)',
+                        'rgba(75, 192, 192, 0.5)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
 </body>
 </html>
